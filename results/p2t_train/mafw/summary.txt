@@ -1,0 +1,16 @@
+=== mafw: 9172 test clips, 5 folds, base UAR 43.12
+sanity: {'identity_vs_base_max': 0.0, 'identity_changed_pct': 0.0, 'base_minus_run_metrics_uar': [7.105427357601002e-15, 0.0, 0.0, 0.0, -7.105427357601002e-15]}
+arm              UAR    dUAR [90% CI]          changed %
+base              43.12   +0.00 [ +0.00,  +0.00]     0.00
+identity          43.12   +0.00 [ +0.00,  +0.00]     0.00
+shuffle_s0        43.08   -0.03 [ -0.22,  +0.16]     1.80
+shuffle_s1        43.27   +0.15 [ -0.03,  +0.33]     1.66
+shuffle_s2        43.27   +0.16 [ -0.03,  +0.35]     1.84
+shuffle_pair      43.33   +0.21 [ +0.04,  +0.39]     1.72
+reverse           43.25   +0.13 [ -0.05,  +0.32]     1.84
+hold8             43.00   -0.12 [ -0.42,  +0.20]     4.57
+hold4             42.69   -0.43 [ -0.79,  -0.05]     8.26
+hold2             41.86   -1.25 [ -1.72,  -0.77]    14.53
+hold1             38.91   -4.20 [ -4.80,  -3.58]    22.37
+static_rand       38.97   -4.14 [ -4.81,  -3.48]    24.61
+readings: {"O_order": "order-invariant", "O_seed_classes": ["order-invariant", "order-invariant", "order-invariant"], "R_direction": "direction-invariant", "K_frame_budget": 4}

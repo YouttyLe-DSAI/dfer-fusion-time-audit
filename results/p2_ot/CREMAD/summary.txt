@@ -1,0 +1,37 @@
+/home/debian135/AVDFEROT/AV-DFER-OT/runs/CREMAD/dev/scr-f1dc1fc2dff2
+pooled over folds [1, 2, 3, 4, 5]: 7438 test clips; base UAR 79.56 (val10 UAR per fold: 76.91, 79.34, 75.97, 72.25, 72.30)
+
+arm          UAR    dUAR [90% CI]          changed % [90% CI]     class
+base        79.56   +0.00 [ +0.00,  +0.00]    0.00 [ 0.00,  0.00]   inert
+copy        79.56   +0.00 [ +0.00,  +0.00]    0.00 [ 0.00,  0.00]   inert
+zero        75.57   -3.98 [ -4.57,  -3.41]   12.23 [11.62, 12.87]   load-bearing
+zero_a2v    75.61   -3.95 [ -4.53,  -3.38]   12.13 [11.52, 12.72]   load-bearing
+indep       79.43   -0.13 [ -0.24,  -0.02]    0.46 [ 0.34,  0.59]   inert
+uniform     79.43   -0.13 [ -0.24,  -0.02]    0.44 [ 0.32,  0.56]   inert
+rowperm     79.44   -0.12 [ -0.25,  +0.01]    0.58 [ 0.44,  0.73]   inert
+devonly     75.59   -3.97 [ -4.54,  -3.40]   12.06 [11.45, 12.66]   load-bearing
+shrink50    79.52   -0.04 [ -0.12,  +0.04]    0.24 [ 0.15,  0.34]   inert
+shrink25    79.45   -0.10 [ -0.20,  -0.01]    0.32 [ 0.22,  0.43]   inert
+papa        79.45   -0.11 [ -0.27,  +0.06]    0.90 [ 0.73,  1.08]   inert
+perm_a      48.39  -31.17 [-32.10, -30.30]   44.70 [43.78, 45.66]   load-bearing
+
+per-fold dUAR
+  base        +0.00   +0.00   +0.00   +0.00   +0.00
+  copy        +0.00   +0.00   +0.00   +0.00   +0.00
+  zero        -3.26   -2.58   -6.05   -4.01   -4.01
+  zero_a2v    -3.20   -2.50   -6.04   -4.01   -4.00
+  indep       -0.25   -0.07   -0.13   -0.07   -0.14
+  uniform     -0.25   -0.07   -0.13   -0.07   -0.14
+  rowperm     -0.04   -0.20   -0.07   +0.07   -0.33
+  devonly     -3.39   -2.37   -5.92   -4.08   -4.07
+  shrink50    -0.07   -0.07   -0.07   +0.00   +0.00
+  shrink25    -0.13   -0.07   -0.13   +0.00   -0.19
+  papa        +0.01   -0.07   -0.34   -0.25   +0.10
+  perm_a     -33.40  -26.62  -32.55  -31.61  -31.62
+
+readings
+  O1: OT routing predictively inert
+  O2_zero_class: load-bearing
+  check_copy_vs_base: [0.0, 0.0, 0.0, 0.0, 0.0]
+  gate_tanh_a2v_mean_abs: 0.062391212638855595
+-> /mnt/debian135/datadeb135/dfer-visual/results/p2_ot/CREMAD/summary.json

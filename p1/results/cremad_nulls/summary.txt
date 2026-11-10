@@ -1,0 +1,71 @@
+pooled over folds [1, 2, 3, 4, 5]: 7437 clips; base UAR 83.02  (not reproduced: P1 stage 0 FAIL)
+
+arm            UAR    dUAR [90% CI]          changed % [90% CI]     class
+base          83.02   +0.00 [ +0.00,  +0.00]    0.00 [ 0.00,  0.00]   inert
+zero          82.57   -0.46 [ -0.99,  +0.06]    8.97 [ 8.46,  9.51]   load-bearing
+indep         80.46   -2.57 [ -3.17,  -1.97]   11.42 [10.82, 12.01]   load-bearing
+devonly       83.18   +0.15 [ -0.33,  +0.63]    7.73 [ 7.21,  8.22]   load-bearing
+shrink25      82.25   -0.78 [ -1.23,  -0.30]    7.03 [ 6.56,  7.52]   load-bearing
+shrink50      83.07   +0.05 [ -0.26,  +0.37]    3.46 [ 3.11,  3.81]   weak
+shrink75      83.12   +0.10 [ -0.10,  +0.31]    1.37 [ 1.16,  1.60]   weak
+rowperm       79.36   -3.66 [ -4.26,  -3.05]   12.64 [12.01, 13.27]   load-bearing
+rowperm_s1    79.40   -3.62 [ -4.24,  -3.01]   12.57 [11.95, 13.19]   load-bearing
+rowperm_s2    79.66   -3.37 [ -3.97,  -2.78]   12.52 [11.89, 13.11]   load-bearing
+rowperm_t     79.61   -3.42 [ -4.00,  -2.83]   11.83 [11.23, 12.44]   load-bearing
+uniform       83.04   +0.01 [ -0.51,  +0.54]    8.59 [ 8.04,  9.16]   load-bearing
+papa          83.67   +0.65 [ +0.24,  +1.03]    4.99 [ 4.57,  5.42]   weak
+perm_a        73.48   -9.54 [-10.34,  -8.78]   21.54 [20.73, 22.28]   load-bearing
+perm_a_fus    74.03   -8.99 [ -9.79,  -8.22]   20.83 [20.03, 21.59]   load-bearing
+perm_v        30.76  -52.26 [-53.31, -51.22]   66.91 [66.05, 67.78]   load-bearing
+perm_v_fus    33.52  -49.51 [-50.56, -48.45]   64.15 [63.26, 65.05]   load-bearing
+emap          80.69   -2.33 [ -2.87,  -1.79]   10.27 [ 9.69, 10.82]   load-bearing
+
+per-fold dUAR
+  base          +0.00   +0.00   +0.00   +0.00   +0.00
+  zero          -0.60   +0.34   -0.62   +0.16   -1.51
+  indep         -4.39   -1.21   -4.26   -0.47   -2.53
+  devonly       -0.52   +1.95   -1.08   +0.65   -0.21
+  shrink25      -1.76   -0.50   -1.30   +1.18   -1.48
+  shrink50      -1.04   -0.13   -0.23   +1.05   +0.57
+  shrink75      +0.05   -0.22   +0.15   +0.31   +0.21
+  rowperm       -4.85   -2.11   -5.91   -2.06   -3.40
+  rowperm_s1    -4.63   -2.12   -5.87   -1.87   -3.64
+  rowperm_s2    -4.41   -2.25   -5.08   -1.11   -3.97
+  rowperm_t     -4.82   -2.92   -4.74   -1.45   -3.19
+  uniform       -1.83   +0.27   +0.91   +1.03   -0.31
+  papa          -0.29   +0.75   +1.12   +0.99   +0.65
+  perm_a       -12.36   -9.56  -14.10   -5.49   -6.41
+  perm_a_fus   -11.95   -9.01  -13.00   -5.22   -5.98
+  perm_v       -48.68  -49.60  -54.59  -54.57  -53.76
+  perm_v_fus   -46.23  -46.34  -51.65  -52.00  -51.18
+  emap          -2.68   -2.09   -4.69   -0.32   -1.89
+
+pre-registered readings
+  N1: alignment reading
+  N1_seeds: {'rowperm': 'alignment reading', 'rowperm_s1': 'alignment reading', 'rowperm_s2': 'alignment reading'}
+  N1_time_only: alignment reading
+  N1_stable: True
+  N2: input-level AV interactions used
+  N3_papa_class: weak
+  factorial_interaction: {'value': 1.9583307919186694, 'ci': [1.3417681303047844, 2.5746627447829895]}
+  shrink_dose: {0.0: -2.5666188138190194, 0.25: -0.7772881201445898, 0.5: 0.05045708583439534, 0.75: 0.10100606997652051, 1.0: 0.0}
+  ordering_by_d_uar: ['rowperm', 'indep', 'zero', 'uniform', 'devonly', 'papa']
+  rowperm_minus_indep: {'value': -1.0926642051374245, 'ci': [-1.4211803930415379, -0.7557983162614165]}
+  emap_minus_base: -2.3303556600848765
+
+sanity
+  fold 1: {'check_max_diff': 0.0, 'agree_with_p1': {'base': 99.45317840054683, 'indep': 99.86329460013671, 'zero': 99.38482570061518}, 'n_views': 4.0, 'emap_valid_partners': 15.991803278688524, 'papa_train_views': 23896}
+  fold 2: {'check_max_diff': 0.0, 'agree_with_p1': {'base': 99.59183673469387, 'indep': 99.65986394557824, 'zero': 99.72789115646259}, 'n_views': 4.0, 'emap_valid_partners': 15.991847826086957, 'papa_train_views': 23868}
+  fold 3: {'check_max_diff': 0.0, 'agree_with_p1': {'base': 99.72881355932203, 'indep': 99.66101694915255, 'zero': 99.45762711864407}, 'n_views': 4.0, 'emap_valid_partners': 15.991216216216216, 'papa_train_views': 23848}
+  fold 4: {'check_max_diff': 0.0, 'agree_with_p1': {'base': 99.59294436906377, 'indep': 99.93215739484395, 'zero': 99.6607869742198}, 'n_views': 4.0, 'emap_valid_partners': 15.980405405405405, 'papa_train_views': 23852}
+  fold 5: {'check_max_diff': 0.0, 'agree_with_p1': {'base': 99.61414790996784, 'indep': 99.67845659163987, 'zero': 99.67845659163987}, 'n_views': 4.0, 'emap_valid_partners': 15.990384615384615, 'papa_train_views': 23528}
+  F3 max relative difference of the token mean (same input): {'indep': 7.164738917708746e-07, 'rowperm': 1.832865166306874e-07, 'shrink50': 1.02718082928277e-07}
+
+F3 trace: relative divergence (token mean, tokens) vs base, mean over folds
+  indep     video b1_cross=(0.000,0.209)  b1_self=(0.109,0.209)  b1_mlp=(0.120,0.203)  b2_cross=(0.292,0.282)  b2_self=(0.307,0.292)  b2_mlp=(0.247,0.255)  norm=(0.267,0.276)
+  indep     audio b1_cross=(0.000,0.236)  b1_self=(0.102,0.218)  b1_mlp=(0.058,0.123)  b2_cross=(0.307,0.398)  b2_self=(0.536,0.542)  b2_mlp=(0.279,0.319)  norm=(0.321,0.388)
+  rowperm   video b1_cross=(0.000,0.296)  b1_self=(0.118,0.280)  b1_mlp=(0.128,0.267)  b2_cross=(0.283,0.327)  b2_self=(0.306,0.328)  b2_mlp=(0.247,0.281)  norm=(0.266,0.307)
+  rowperm   audio b1_cross=(0.000,0.334)  b1_self=(0.104,0.296)  b1_mlp=(0.055,0.162)  b2_cross=(0.332,0.510)  b2_self=(0.591,0.651)  b2_mlp=(0.305,0.377)  norm=(0.350,0.461)
+  shrink50  video b1_cross=(0.000,0.105)  b1_self=(0.056,0.105)  b1_mlp=(0.057,0.100)  b2_cross=(0.140,0.141)  b2_self=(0.136,0.138)  b2_mlp=(0.108,0.119)  norm=(0.116,0.128)
+  shrink50  audio b1_cross=(0.000,0.118)  b1_self=(0.049,0.108)  b1_mlp=(0.030,0.063)  b2_cross=(0.121,0.187)  b2_self=(0.214,0.238)  b2_mlp=(0.116,0.146)  norm=(0.144,0.192)
+-> /mnt/debian135/datadeb135/dfer-visual/p1/results/cremad_nulls/summary.json

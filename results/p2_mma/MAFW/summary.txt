@@ -1,0 +1,98 @@
+
+=== none: /home/debian135/AVDFEROT/AV-DFER-OT/runs/MAFW/dev/none-07e50d760885
+pooled over folds [1, 2, 3, 4, 5]: 9172 test clips; base UAR 43.43
+arm            UAR    dUAR [90% CI]          changed %     class
+base          43.43   +0.00 [ +0.00,  +0.00]     0.00   inert
+copy          43.43   +0.00 [ +0.00,  +0.00]     0.00   inert
+zero_nat      24.99  -18.44 [-19.28, -17.64]    55.80   load-bearing
+zero_nat_a2v  24.93  -18.50 [-19.37, -17.69]    55.79   load-bearing
+zero_nat_v2a  43.10   -0.32 [ -0.66,  +0.01]     4.08   weak
+zero_late     43.08   -0.35 [ -1.09,  +0.39]    18.62   load-bearing
+zero_all      24.51  -18.92 [-19.85, -18.03]    60.92   load-bearing
+perm_a        43.73   +0.30 [ -0.50,  +1.13]    30.85   load-bearing
+delay-640     42.89   -0.53 [ -1.08,  -0.02]    11.82   load-bearing
+delay-320     43.20   -0.22 [ -0.59,  +0.16]     8.05   load-bearing
+delay-160     43.47   +0.04 [ -0.29,  +0.37]     6.28   load-bearing
+delay-80      43.01   -0.41 [ -0.82,  -0.03]     9.01   load-bearing
+delay-40      43.21   -0.22 [ -0.63,  +0.18]     7.68   load-bearing
+delay+40      43.31   -0.11 [ -0.47,  +0.27]     6.83   load-bearing
+delay+80      43.22   -0.20 [ -0.58,  +0.16]     7.83   load-bearing
+delay+160     43.19   -0.23 [ -0.53,  +0.06]     5.43   load-bearing
+delay+320     42.96   -0.46 [ -0.83,  -0.06]     7.81   load-bearing
+delay+640     42.58   -0.84 [ -1.30,  -0.38]    11.71   load-bearing
+silence       37.03   -6.40 [ -7.14,  -5.62]    32.87   load-bearing
+
+=== scr: /home/debian135/AVDFEROT/AV-DFER-OT/runs/MAFW/dev/scr-4cc4ce1d94fa
+pooled over folds [1, 2, 3, 4, 5]: 9172 test clips; base UAR 43.43
+arm            UAR    dUAR [90% CI]          changed %     class
+base          43.43   +0.00 [ +0.00,  +0.00]     0.00   inert
+copy          43.43   +0.00 [ +0.00,  +0.00]     0.00   inert
+zero_nat      34.18   -9.25 [-10.06,  -8.44]    37.75   load-bearing
+zero_nat_a2v  34.40   -9.03 [ -9.83,  -8.25]    37.27   load-bearing
+zero_nat_v2a  43.41   -0.02 [ -0.32,  +0.27]     3.55   weak
+zero_late     43.04   -0.39 [ -1.12,  +0.36]    19.16   load-bearing
+zero_route    42.22   -1.21 [ -1.73,  -0.66]    14.06   load-bearing
+zero_all      25.75  -17.68 [-18.58, -16.81]    60.42   load-bearing
+perm_a        44.02   +0.59 [ -0.23,  +1.43]    31.77   load-bearing
+delay-640     43.23   -0.20 [ -0.70,  +0.32]    12.24   load-bearing
+delay-320     43.70   +0.27 [ -0.11,  +0.68]     8.25   load-bearing
+delay-160     43.75   +0.32 [ -0.01,  +0.72]     6.79   load-bearing
+delay-80      43.57   +0.14 [ -0.29,  +0.60]     9.41   load-bearing
+delay-40      43.34   -0.09 [ -0.54,  +0.37]     8.33   load-bearing
+delay+40      43.67   +0.24 [ -0.14,  +0.62]     7.56   load-bearing
+delay+80      43.36   -0.07 [ -0.48,  +0.36]     8.63   load-bearing
+delay+160     43.58   +0.15 [ -0.22,  +0.51]     5.70   load-bearing
+delay+320     43.14   -0.29 [ -0.67,  +0.12]     7.76   load-bearing
+delay+640     42.58   -0.85 [ -1.33,  -0.34]    12.37   load-bearing
+silence       37.34   -6.09 [ -6.87,  -5.28]    34.09   load-bearing
+
+readings
+  M1_zero_nat_class: load-bearing
+  M1_zero_all_class: load-bearing
+  M2_tolerance_none_ms: {'late': 320, 'early': 320}
+  tolerance_scr_ms: {'late': 320, 'early': 640}
+  M3: OT routing adds no alignment sensitivity
+  M3_delta: {-640: {'value': 0.3301464499980966, 'ci': [-0.10758367979711991, 0.7857101973942431]}, -320: {'value': 0.4934194131000851, 'ci': [0.10228146033918294, 0.9016038145708932]}, -160: {'value': 0.28358082978388666, 'ci': [-0.06777016451235625, 0.6743611758029537]}, -80: {'value': 0.5553587240811169, 'ci': [0.1582560769991279, 0.9931278408375873]}, -40: {'value': 0.12683346314935307, 'ci': [-0.30295289275737114, 0.5639948247187572]}, 40: {'value': 0.3493806446535146, 'ci': [-0.04064151739648878, 0.7507996047925004]}, 80: {'value': 0.13519986974754516, 'ci': [-0.24187235109071387, 0.5347258156626072]}, 160: {'value': 0.3818646484725221, 'ci': [0.005337420784952943, 0.7768462240209093]}, 320: {'value': 0.1711336648370434, 'ci': [-0.26115996491322446, 0.6131537260120349]}, 640: {'value': -0.0044803508980351126, 'ci': [-0.47868288017457844, 0.4664441836923773]}}
+  zero_route_agree_with_p2ot_zero_pct: [100.0, 100.0, 100.0, 100.0, 100.0]
+
+per-fold dUAR
+  none base          +0.00   +0.00   +0.00   +0.00   +0.00
+  none copy          +0.00   +0.00   +0.00   +0.00   +0.00
+  none zero_nat     -14.49  -15.52  -21.54  -20.37  -20.27
+  none zero_nat_a2v -14.59  -15.52  -21.33  -20.71  -20.35
+  none zero_nat_v2a  -0.85   -0.98   +0.27   -0.26   +0.21
+  none zero_late     -1.05   -0.70   -0.91   +1.55   -0.59
+  none zero_all     -14.50  -16.65  -20.01  -19.38  -24.07
+  none perm_a        -0.37   +0.67   +0.06   +0.44   +0.72
+  none delay-640     +0.67   -0.73   -1.17   -0.65   -0.78
+  none delay-320     +0.79   -0.75   -0.43   +0.03   -0.76
+  none delay-160     +1.27   -0.81   -0.47   +0.29   -0.07
+  none delay-80      +0.85   -0.92   -0.32   -0.43   -1.25
+  none delay-40      +0.45   -0.61   +0.05   -0.42   -0.57
+  none delay+40      +0.36   +0.26   -0.22   +0.02   -0.98
+  none delay+80      +0.73   -0.47   -0.61   +0.06   -0.74
+  none delay+160     +0.20   -0.37   -0.40   -0.48   -0.11
+  none delay+320     -0.18   -0.92   -0.52   -0.70   +0.02
+  none delay+640     +0.30   -0.81   -2.03   -1.06   -0.61
+  none silence       -4.52   -5.53  -12.67   -5.55   -3.70
+  scr  base          +0.00   +0.00   +0.00   +0.00   +0.00
+  scr  copy          +0.00   +0.00   +0.00   +0.00   +0.00
+  scr  zero_nat      -6.43   -7.69  -12.90   -7.45  -11.77
+  scr  zero_nat_a2v  -6.55   -8.03  -11.72   -6.97  -11.85
+  scr  zero_nat_v2a  -0.82   +0.39   -0.28   +0.19   +0.41
+  scr  zero_late     -0.39   +0.44   -1.63   +0.87   -1.24
+  scr  zero_route    -1.06   -0.15   -2.03   +0.00   -2.82
+  scr  zero_all     -12.56  -16.25  -19.18  -15.53  -24.90
+  scr  perm_a        -0.62   +0.99   -0.52   +0.48   +2.62
+  scr  delay-640     +1.19   -0.25   -1.11   +0.04   -0.91
+  scr  delay-320     +1.68   -0.11   -0.04   -0.06   -0.13
+  scr  delay-160     +1.80   +0.29   +0.08   +0.11   -0.65
+  scr  delay-80      +1.42   -0.27   -0.37   +0.36   -0.43
+  scr  delay-40      +0.24   -0.24   +0.06   -0.34   -0.18
+  scr  delay+40      +0.61   +0.79   +0.42   -0.02   -0.61
+  scr  delay+80      +0.22   +0.37   +0.00   -0.44   -0.51
+  scr  delay+160     +0.13   +0.51   -0.12   -0.28   +0.50
+  scr  delay+320     -0.33   -0.46   -0.12   -0.63   +0.10
+  scr  delay+640     -0.09   -0.83   -2.00   -1.22   -0.08
+  scr  silence       -4.92   -4.63  -12.29   -6.11   -2.48
+-> results/p2_mma/MAFW/summary.json

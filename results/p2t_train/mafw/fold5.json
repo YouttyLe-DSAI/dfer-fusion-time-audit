@@ -1,0 +1,73 @@
+{
+ "run": "/mnt/debian135/datadeb135/dfer-visual/runs_p2t/train_shuffle/MAFW/confirm/none-3d586f79140b",
+ "fold": 5,
+ "routed": false,
+ "precision": "bf16",
+ "n_clips": 1831,
+ "test_annotation": "/home/debian135/AVDFEROT/AV-DFER-OT/annotation/MAFW_set_5_test_faces.txt",
+ "limit": 0,
+ "check_identity_vs_base": 0.0,
+ "run_metrics_uar": 41.5007865120389,
+ "arms": {
+  "base": {
+   "uar": 41.50078651203889,
+   "war": 55.9803386127799,
+   "changed_pct": 0.0
+  },
+  "identity": {
+   "uar": 41.50078651203889,
+   "war": 55.9803386127799,
+   "changed_pct": 0.0
+  },
+  "shuffle_s0": {
+   "uar": 41.59741880158154,
+   "war": 56.089568541780444,
+   "changed_pct": 1.2015292190060076
+  },
+  "shuffle_s1": {
+   "uar": 41.653297534888836,
+   "war": 56.14418350628072,
+   "changed_pct": 1.4746040415073731
+  },
+  "shuffle_s2": {
+   "uar": 41.5523058894256,
+   "war": 56.14418350628072,
+   "changed_pct": 1.5838339705079192
+  },
+  "shuffle_pair": {
+   "uar": 41.65341889583566,
+   "war": 56.198798470781,
+   "changed_pct": 1.5292190060076463
+  },
+  "reverse": {
+   "uar": 41.54600988107866,
+   "war": 55.9803386127799,
+   "changed_pct": 1.4746040415073731
+  },
+  "hold8": {
+   "uar": 41.41744536768232,
+   "war": 55.761878754778806,
+   "changed_pct": 4.09612233752048
+  },
+  "hold4": {
+   "uar": 40.87178786707464,
+   "war": 54.94265428727472,
+   "changed_pct": 9.666848716548335
+  },
+  "hold2": {
+   "uar": 40.46552627284788,
+   "war": 54.50573457127253,
+   "changed_pct": 15.401419989077006
+  },
+  "hold1": {
+   "uar": 37.38160649579424,
+   "war": 50.62807209175314,
+   "changed_pct": 24.35827416712179
+  },
+  "static_rand": {
+   "uar": 37.944023583891344,
+   "war": 50.682687056253414,
+   "changed_pct": 26.1605679956308
+  }
+ }
+}

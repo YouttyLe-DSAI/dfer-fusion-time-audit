@@ -1,0 +1,49 @@
+/mnt/debian135/datadeb135/dfer-visual/results/stage0a/probe_MMA_DFEW_scr.json
+folds ['1', '2', '3', '4', '5'], PCA 128, limit 0
+
+mean val10 UAR over folds (chance 14.29)
+block level        S       D      SD
+    6   cls    39.29   18.17   37.85
+    6  mean    41.92   20.41   39.94
+    6    r4    44.96   21.52   43.92
+    6 patch    46.04   20.05   44.17
+    9   cls    54.48   20.87   50.15
+    9  mean    53.25   23.33   52.77
+    9    r4    54.75   22.18   53.87
+    9 patch    54.41   22.34   52.67
+   12   cls    68.12   24.15   65.84
+   12  mean    65.44   23.36   63.36
+   12    r4    66.09   25.24   65.47
+   12 patch    66.16   22.84   65.15
+
+paired comparisons (counts = diff >= 2.0 and 90% CI excludes 0)
+    6  H3a          6/r4/D - chance          +7.24  [ +5.67,  +8.89]  COUNTS
+    6  H3b        6/cls/SD - 6/cls/S         -1.44  [ -3.00,  +0.14]  
+    6  H3b       6/mean/SD - 6/mean/S        -1.98  [ -3.58,  -0.42]  
+    6  H3b         6/r4/SD - 6/r4/S          -1.05  [ -2.87,  +0.84]  
+    6  H3b      6/patch/SD - 6/patch/S       -1.87  [ -3.40,  -0.33]  
+    6   H2          6/r4/D - 6/cls/D         +3.35  [ +1.37,  +5.33]  COUNTS
+    6   H2          6/r4/D - 6/mean/D        +1.12  [ -0.64,  +2.91]  
+    6   H2       6/patch/D - 6/cls/D         +1.88  [ +0.16,  +3.77]  
+    6   H2       6/patch/D - 6/r4/D          -1.48  [ -3.14,  +0.12]  
+    9  H3a          9/r4/D - chance          +7.90  [ +6.30,  +9.40]  COUNTS
+    9  H3b        9/cls/SD - 9/cls/S         -4.33  [ -6.16,  -2.52]  
+    9  H3b       9/mean/SD - 9/mean/S        -0.48  [ -2.08,  +1.20]  
+    9  H3b         9/r4/SD - 9/r4/S          -0.88  [ -2.78,  +1.01]  
+    9  H3b      9/patch/SD - 9/patch/S       -1.74  [ -3.30,  -0.23]  
+    9   H2          9/r4/D - 9/cls/D         +1.31  [ -0.60,  +3.14]  
+    9   H2          9/r4/D - 9/mean/D        -1.15  [ -3.01,  +0.60]  
+    9   H2       9/patch/D - 9/cls/D         +1.47  [ -0.24,  +3.28]  
+    9   H2       9/patch/D - 9/r4/D          +0.16  [ -1.35,  +1.76]  
+   12  H3a         12/r4/D - chance         +10.96  [ +9.36, +12.63]  COUNTS
+   12  H3b       12/cls/SD - 12/cls/S        -2.29  [ -4.18,  -0.48]  
+   12  H3b      12/mean/SD - 12/mean/S       -2.08  [ -3.95,  +0.03]  
+   12  H3b        12/r4/SD - 12/r4/S         -0.62  [ -2.53,  +1.40]  
+   12  H3b     12/patch/SD - 12/patch/S      -1.01  [ -2.80,  +0.81]  
+   12   H2         12/r4/D - 12/cls/D        +1.10  [ -1.03,  +3.18]  
+   12   H2         12/r4/D - 12/mean/D       +1.88  [ -0.02,  +3.70]  
+   12   H2      12/patch/D - 12/cls/D        -1.31  [ -3.38,  +0.87]  
+   12   H2      12/patch/D - 12/r4/D         -2.40  [ -4.14,  -0.66]  
+
+pre-registered verdict at block 9: H3a SUPPORTED, H3b not supported, H2 not supported
+-> /mnt/debian135/datadeb135/dfer-visual/results/stage0a/probe_MMA_DFEW_scr_summary.json

@@ -1,0 +1,22 @@
+pooled over folds [1, 2, 3, 4, 5]: 7437 clips
+
+stage 0: reproduction (README per-fold UAR in brackets)
+  fold 1: UAR  86.74 [86.66]  diff +0.08   WAR  86.74
+  fold 2: UAR  83.40 [83.27]  diff +0.13   WAR  83.33
+  fold 3: UAR  86.83 [87.23]  diff -0.40   WAR  86.78
+  fold 4: UAR  83.74 [83.70]  diff +0.04   WAR  83.79
+  fold 5: UAR  84.20 [83.88]  diff +0.32   WAR  84.12
+  pooled: UAR 84.97 [84.94]  WAR 84.94 [84.91]
+  stage 0 verdict: PASS (pooled UAR >= 83.94 and every fold >= README - 2.0)
+
+stage 1: interventions vs base (pooled; 90% bootstrap CI)
+        base: UAR  84.97  dUAR  +0.00 [+0.00, +0.00]   changed  0.00% [0.00, 0.00]
+       indep: UAR  82.39  dUAR  -2.58 [-3.14, -2.02]   changed 10.47% [9.87, 11.05]
+        zero: UAR  84.66  dUAR  -0.31 [-0.76, +0.16]   changed  7.26% [6.76, 7.72]
+   indep_v2a: UAR  82.45  dUAR  -2.52 [-3.04, -2.00]   changed  9.29% [8.74, 9.82]
+   indep_a2v: UAR  84.78  dUAR  -0.19 [-0.53, +0.15]   changed  3.87% [3.51, 4.24]
+    indep_b1: UAR  83.02  dUAR  -1.95 [-2.50, -1.42]   changed  9.84% [9.25, 10.43]
+    indep_b2: UAR  84.60  dUAR  -0.37 [-0.60, -0.14]   changed  1.87% [1.61, 2.12]
+
+pre-registered classification of indep: load-bearing
+-> /mnt/debian135/datadeb135/dfer-visual/p1/results/cremad_of/eval/summary.json

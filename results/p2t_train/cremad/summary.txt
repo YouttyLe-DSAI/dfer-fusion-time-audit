@@ -1,0 +1,16 @@
+=== cremad: 7438 test clips, 5 folds, base UAR 78.77
+sanity: {'identity_vs_base_max': 0.0, 'identity_changed_pct': 0.0, 'base_minus_run_metrics_uar': [4.212064879810569, -0.42829282721457673, 2.8535077166486076, 8.533478560606667, 5.977182539682531]}
+arm              UAR    dUAR [90% CI]          changed %
+base              78.77   +0.00 [ +0.00,  +0.00]     0.00
+identity          78.77   +0.00 [ +0.00,  +0.00]     0.00
+shuffle_s0        78.70   -0.07 [ -0.20,  +0.06]     0.55
+shuffle_s1        78.69   -0.07 [ -0.22,  +0.08]     0.75
+shuffle_s2        78.78   +0.02 [ -0.10,  +0.14]     0.58
+shuffle_pair      78.78   +0.01 [ -0.13,  +0.16]     0.67
+reverse           78.76   -0.00 [ -0.15,  +0.15]     0.71
+hold8             78.88   +0.11 [ -0.10,  +0.34]     1.61
+hold4             79.06   +0.30 [ -0.02,  +0.62]     3.60
+hold2             79.08   +0.31 [ -0.09,  +0.73]     5.89
+hold1             75.82   -2.95 [ -3.54,  -2.41]    11.06
+static_rand       73.84   -4.93 [ -5.59,  -4.29]    14.52
+readings: {"O_order": "order-invariant", "O_seed_classes": ["order-invariant", "order-invariant", "order-invariant"], "R_direction": "direction-invariant", "K_frame_budget": 2}

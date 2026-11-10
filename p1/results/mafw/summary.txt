@@ -1,0 +1,22 @@
+pooled over folds [1, 2, 3, 4, 5]: 9156 clips
+
+stage 0: reproduction (README per-fold UAR in brackets)
+  fold 1: UAR  35.71 [36.02]  diff -0.31   WAR  47.77
+  fold 2: UAR  39.47 [41.57]  diff -2.10   WAR  53.19
+  fold 3: UAR  44.56 [46.46]  diff -1.90   WAR  58.73
+  fold 4: UAR  45.44 [47.50]  diff -2.06   WAR  60.69
+  fold 5: UAR  39.12 [41.88]  diff -2.76   WAR  52.92
+  pooled: UAR 40.87 [42.69]  WAR 54.65 [56.21]
+  stage 0 verdict: FAIL (pooled UAR >= 41.69 and every fold >= README - 2.0)
+
+stage 1: interventions vs base (pooled; 90% bootstrap CI)
+        base: UAR  40.87  dUAR  +0.00 [+0.00, +0.00]   changed  0.00% [0.00, 0.00]
+       indep: UAR  40.03  dUAR  -0.84 [-1.27, -0.44]   changed  9.09% [8.61, 9.57]
+        zero: UAR  37.97  dUAR  -2.89 [-3.52, -2.28]   changed 20.01% [19.30, 20.66]
+   indep_v2a: UAR  40.85  dUAR  -0.02 [-0.20, +0.19]   changed  2.76% [2.48, 3.04]
+   indep_a2v: UAR  40.18  dUAR  -0.68 [-1.08, -0.30]   changed  8.98% [8.50, 9.48]
+    indep_b1: UAR  40.16  dUAR  -0.71 [-1.14, -0.29]   changed  8.98% [8.49, 9.47]
+    indep_b2: UAR  40.93  dUAR  +0.07 [-0.11, +0.26]   changed  2.03% [1.78, 2.27]
+
+pre-registered classification of indep: load-bearing   (stage 0 FAILED: not a primary result)
+-> /mnt/debian135/datadeb135/dfer-visual/p1/results/mafw/summary.json

@@ -1,0 +1,22 @@
+val10: 938 clips
+
+run                      last UAR   best UAR (ep)   WAR    spread f / CLS   adapter params
+base_b12                  56.98      57.65 (21)   69.19   0.1629 / 0.1629   0
+framewise_b12             58.34      58.48 (20)   70.68   0.1674 / 0.1629   52256
+framewise_b9              54.52      55.16 (21)   66.63   0.0334 / 0.0323   52256
+mixer_b12                 58.81      59.25 (22)   71.22   0.1683 / 0.1629   52512
+motionpool_b12            56.75      57.97 (21)   68.55   0.1787 / 0.1629   51584
+motionpool_b9             53.22      53.74 (19)   65.57   0.0377 / 0.0323   51584
+
+paired differences (90% bootstrap CI)
+  motionpool_b12   - framewise_b12     -1.59 [ -2.81,  -0.42]   changed  8.10%
+  framewise_b12    - base_b12          +1.36 [ +0.25,  +2.49]   changed  7.57%
+  motionpool_b12   - base_b12          -0.23 [ -1.26,  +0.75]   changed  7.68%
+  mixer_b12        - framewise_b12     +0.47 [ -0.21,  +1.14]   changed  2.77%
+  mixer_b12        - base_b12          +1.83 [ +0.60,  +3.06]   changed  8.21%
+  motionpool_b9    - framewise_b9      -1.30 [ -3.19,  +0.59]   changed 17.38%
+  framewise_b9     - base_b12          -2.46 [ -5.00,  +0.02]   changed 31.02%
+
+decision: STOP  (UAR(iii) - UAR(ii) >= +1.0 and 90% CI lower bound > 0)
+mechanism check (iii, temporal contrasts suppressed at inference): {'suppress_uar': 55.45468820980718, 'uar': 56.745040649239506, 'suppress_d_uar': -1.2903524394323256, 'suppress_changed_pct': 9.488272921108742, 'weight_entropy': 1.7193354368209839, 'weight_entropy_uniform': 2.772588722239781}
+-> /mnt/debian135/datadeb135/dfer-visual/results/s0b/summary.json

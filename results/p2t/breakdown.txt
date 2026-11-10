@@ -1,0 +1,128 @@
+=== hicmae_cremad (CREMAD, 7437 clips)
+per class: n, base recall, d_recall [90% CI] per arm (* = time-sensitive)
+  anger            1271  87.9  shuffle_s0:  -0.9 [ -2.4, +0.5]   reverse: -16.8 [-18.7,-14.9]*  hold4: -55.3 [-57.6,-53.0]*  hold1: -87.8 [-89.3,-86.3]*
+  disgust          1270  88.2  shuffle_s0: -10.3 [-11.8, -8.8]*  reverse:  -5.9 [ -7.2, -4.7]*  hold4:  -1.8 [ -3.0, -0.6]   hold1: -23.5 [-25.6,-21.4]*
+  fear             1271  72.9  shuffle_s0: -33.4 [-35.7,-30.9]*  reverse: -19.0 [-21.4,-16.9]*  hold4:  -9.4 [-11.2, -7.7]*  hold1:  -7.2 [ -9.2, -5.2]*
+  happiness        1271  96.6  shuffle_s0:  -6.4 [ -7.6, -5.2]*  reverse: -13.1 [-14.8,-11.5]*  hold4: -11.3 [-12.7, -9.8]*  hold1: -64.9 [-67.2,-62.7]*
+  neutral          1086  86.3  shuffle_s0:  -5.2 [ -7.4, -3.1]*  reverse: -21.4 [-23.7,-19.0]*  hold4: -54.4 [-56.9,-52.0]*  hold1: -80.8 [-82.6,-78.8]*
+  sadness          1268  77.9  shuffle_s0: -30.2 [-32.4,-27.9]*  reverse:  -9.6 [-11.8, -7.5]*  hold4:  +4.9 [ +3.3, +6.5]   hold1:  +4.2 [ +2.4, +6.1] 
+length tertiles (num_frames cuts 69 / 81):
+  short n= 2588 med=   62 base=85.05  shuffle_s0:-15.14 [-16.55,-13.76]  reverse:-16.95 [-18.44,-15.51]  hold4:-19.57 [-20.93,-18.33]  hold1:-42.20 [-43.58,-40.77]
+  mid   n= 2438 med=   75 base=85.37  shuffle_s0:-14.52 [-15.81,-13.15]  reverse:-12.86 [-14.21,-11.48]  hold4:-21.12 [-22.37,-19.84]  hold1:-43.81 [-45.13,-42.33]
+  long  n= 2411 med=   90 base=84.15  shuffle_s0:-13.36 [-14.76,-11.98]  reverse:-13.13 [-14.69,-11.59]  hold4:-23.88 [-25.37,-22.41]  hold1:-44.10 [-45.64,-42.64]
+  long-short  shuffle_s0: +1.78 [-0.25,+3.86]   reverse: +3.82 [+1.68,+6.03]!  hold4: -4.30 [-6.23,-2.36]!  hold1: -1.90 [-4.01,+0.08]    (! = length effect)
+
+=== hicmae_mafw (MAFW, 9156 clips)
+per class: n, base recall, d_recall [90% CI] per arm (* = time-sensitive)
+  anger            1388  69.1  shuffle_s0:  +9.2 [ +7.7,+10.7]   reverse:  -0.4 [ -1.6, +0.8]   hold4: -60.5 [-62.7,-58.4]*  hold1: -59.7 [-62.0,-57.6]*
+  disgust           639  21.6  shuffle_s0:  -9.5 [-11.7, -7.4]*  reverse:  -0.5 [ -2.4, +1.5]   hold4: -10.3 [-12.9, -7.7]*  hold1: -18.5 [-21.0,-15.9]*
+  fear              625  42.4  shuffle_s0:  +5.0 [ +2.3, +7.5]   reverse:  -4.5 [ -6.5, -2.3]*  hold4: -30.4 [-33.3,-27.4]*  hold1: -31.0 [-34.1,-28.0]*
+  happiness        1236  74.6  shuffle_s0: -12.6 [-14.4,-10.8]*  reverse:  +0.0 [ -1.1, +1.1]   hold4:  +3.3 [ +1.7, +5.0]   hold1: -11.9 [-14.1, -9.7]*
+  neutral          1136  59.3  shuffle_s0:  +4.9 [ +3.1, +6.7]   reverse:  -2.3 [ -3.7, -0.9]   hold4: -30.9 [-33.4,-28.5]*  hold1:  -3.3 [ -5.8, -0.7]*
+  sadness          1466  76.2  shuffle_s0:  +0.7 [ -0.5, +1.8]   reverse:  +1.6 [ +0.6, +2.5]   hold4:  -7.1 [ -8.7, -5.5]*  hold1:  -1.2 [ -3.0, +0.5] 
+  surprise         1070  56.9  shuffle_s0: -31.9 [-34.2,-29.5]*  reverse:  +2.0 [ +0.6, +3.4]   hold4: +30.2 [+27.9,+32.4]   hold1: +19.8 [+17.5,+22.2] 
+  contempt          236   5.1  shuffle_s0:  -1.7 [ -3.5, +0.0]   reverse:  +1.7 [ +0.4, +3.1]   hold4:  +9.7 [ +6.5,+13.2]   hold1:  -1.7 [ -4.3, +0.8] 
+  anxiety           916  30.3  shuffle_s0:  -6.2 [ -8.0, -4.3]*  reverse:  -1.7 [ -3.3, -0.1]   hold4:  -2.3 [ -4.6, +0.1]   hold1: -11.0 [-13.4, -8.7]*
+  helplessness      262   5.7  shuffle_s0:  -4.2 [ -6.9, -1.9]*  reverse:  -0.8 [ -2.5, +1.1]   hold4:  -2.3 [ -4.6, -0.4]   hold1:  -5.0 [ -7.6, -2.6]*
+  disappointment    182   8.2  shuffle_s0:  -3.3 [ -6.1, -0.5]*  reverse:  +0.5 [ -1.8, +3.1]   hold4:  +8.2 [ +4.7,+11.8]   hold1:  -1.1 [ -4.1, +1.9] 
+length tertiles (num_frames cuts 64 / 101):
+  short n= 3057 med=   53 base=42.95  shuffle_s0: -5.27 [-6.62,-3.98]  reverse: -0.30 [-1.34,+0.84]  hold4: -8.66 [-10.16,-7.21]  hold1:-12.76 [-14.11,-11.33]
+  mid   n= 3072 med=   80 base=40.94  shuffle_s0: -4.64 [-5.77,-3.57]  reverse: -0.50 [-1.32,+0.30]  hold4: -7.94 [-9.27,-6.64]  hold1:-10.37 [-11.71,-8.95]
+  long  n= 3027 med=  144 base=37.42  shuffle_s0: -3.64 [-4.69,-2.62]  reverse: +0.29 [-0.50,+1.09]  hold4: -7.98 [-9.31,-6.67]  hold1:-10.02 [-11.32,-8.83]
+  long-short  shuffle_s0: +1.63 [-0.00,+3.27]   reverse: +0.59 [-0.91,+1.91]   hold4: +0.68 [-1.38,+2.64]   hold1: +2.74 [+0.85,+4.53]!   (! = length effect)
+
+=== mma_dfew (DFEW, 11697 clips)
+per class: n, base recall, d_recall [90% CI] per arm (* = time-sensitive)
+  happiness        2445  95.1  shuffle_s0:  -1.0 [ -1.5, -0.6]   reverse:  -2.1 [ -2.7, -1.5]   hold4:  -1.7 [ -2.2, -1.1]   hold1: -13.7 [-15.0,-12.5]*
+  sadness          1894  79.8  shuffle_s0:  -0.2 [ -0.5, +0.1]   reverse:  -0.3 [ -0.8, +0.2]   hold4:  +0.2 [ -0.5, +0.8]   hold1:  -0.3 [ -1.4, +0.6] 
+  neutral          2669  74.3  shuffle_s0:  +0.0 [ -0.5, +0.5]   reverse:  +0.6 [ -0.1, +1.2]   hold4:  +0.2 [ -0.4, +0.9]   hold1:  +0.3 [ -0.7, +1.4] 
+  anger            2173  79.2  shuffle_s0:  +0.4 [ -0.0, +0.8]   reverse:  +0.1 [ -0.5, +0.7]   hold4:  -2.8 [ -3.6, -2.0]   hold1: -15.2 [-16.6,-13.8]*
+  surprise         1469  62.3  shuffle_s0:  -2.5 [ -3.4, -1.5]   reverse:  -3.6 [ -4.9, -2.4]*  hold4:  -0.5 [ -1.5, +0.5]   hold1:  -3.1 [ -4.6, -1.6]*
+  disgust           145  13.1  shuffle_s0:  -1.4 [ -3.8, +0.7]   reverse:  -2.1 [ -5.3, +0.7]   hold4:  +2.1 [ -0.8, +5.1]   hold1:  -1.4 [ -5.6, +2.8] 
+  fear              902  57.4  shuffle_s0:  +0.8 [ -0.1, +1.7]   reverse:  -0.7 [ -1.8, +0.4]   hold4:  -1.3 [ -2.4, -0.3]   hold1:  -3.1 [ -4.9, -1.3]*
+length tertiles (num_frames cuts 49 / 78):
+  short n= 3970 med=   47 base=66.97  shuffle_s0: -0.48 [-1.00,-0.05]  reverse: -1.05 [-1.99,-0.13]  hold4: -0.49 [-1.23,+0.32]  hold1: -4.21 [-5.29,-3.16]
+  mid   n= 3847 med=   71 base=64.56  shuffle_s0: -0.82 [-1.69,-0.06]  reverse: -1.08 [-1.91,-0.38]  hold4: -0.39 [-1.42,+0.61]  hold1: -5.57 [-7.12,-3.97]
+  long  n= 3880 med=  106 base=64.11  shuffle_s0: -0.26 [-1.02,+0.69]  reverse: -1.40 [-1.95,-0.88]  hold4: -0.95 [-1.58,-0.34]  hold1: -5.87 [-7.59,-4.19]
+  long-short  shuffle_s0: +0.22 [-0.68,+1.28]   reverse: -0.35 [-1.41,+0.73]   hold4: -0.46 [-1.51,+0.53]   hold1: -1.66 [-3.68,+0.39]    (! = length effect)
+
+=== mma_mafw (MAFW, 9172 clips)
+per class: n, base recall, d_recall [90% CI] per arm (* = time-sensitive)
+  happiness        1242  80.0  shuffle_s0:  -1.4 [ -2.2, -0.6]   reverse:  -1.1 [ -2.1, -0.2]   hold4:  -2.3 [ -3.5, -1.2]   hold1: -17.1 [-19.1,-15.1]*
+  sadness          1470  75.5  shuffle_s0:  -0.3 [ -0.8, +0.2]   reverse:  -0.1 [ -0.6, +0.5]   hold4:  +0.0 [ -0.7, +0.7]   hold1:  -2.0 [ -3.3, -0.6] 
+  neutral          1138  65.6  shuffle_s0:  +0.3 [ -0.5, +1.0]   reverse:  -0.4 [ -1.5, +0.6]   hold4:  +0.2 [ -1.0, +1.3]   hold1:  +3.1 [ +1.3, +4.8] 
+  anger            1390  66.8  shuffle_s0:  +0.0 [ -0.6, +0.6]   reverse:  -0.2 [ -0.9, +0.4]   hold4:  -1.0 [ -2.1, +0.1]   hold1:  -6.8 [ -8.4, -5.2]*
+  surprise         1072  56.8  shuffle_s0:  +0.1 [ -0.7, +0.9]   reverse:  -0.3 [ -1.2, +0.7]   hold4:  -2.1 [ -3.4, -0.8]   hold1:  -6.3 [ -8.3, -4.4]*
+  disgust           639  28.3  shuffle_s0:  -0.9 [ -2.2, +0.2]   reverse:  -1.4 [ -2.9, +0.0]   hold4:  -3.3 [ -5.1, -1.7]*  hold1:  -6.1 [ -8.6, -3.4]*
+  fear              625  50.1  shuffle_s0:  +0.5 [ -0.5, +1.4]   reverse:  +0.3 [ -0.8, +1.4]   hold4:  -0.8 [ -1.9, +0.3]   hold1:  -2.9 [ -5.0, -0.8] 
+  contempt          236   8.9  shuffle_s0:  -1.3 [ -2.9, +0.0]   reverse:  -0.8 [ -2.9, +1.2]   hold4:  -0.8 [ -2.2, +0.4]   hold1:  -3.8 [ -6.6, -0.9]*
+  anxiety           916  30.0  shuffle_s0:  -0.4 [ -1.4, +0.5]   reverse:  +0.0 [ -1.1, +1.1]   hold4:  -2.7 [ -4.1, -1.3]   hold1:  -6.8 [ -8.8, -4.7]*
+  helplessness      262   6.5  shuffle_s0:  +1.1 [ -0.7, +3.1]   reverse:  +0.8 [ -1.6, +3.2]   hold4:  +1.9 [ +0.0, +3.9]   hold1:  -1.5 [ -3.8, +0.8] 
+  disappointment    182   9.9  shuffle_s0:  -2.2 [ -4.2, -0.5]   reverse:  -3.3 [ -5.6, -1.2]*  hold4:  +0.0 [ -1.9, +1.9]   hold1:  -0.5 [ -4.2, +3.0] 
+length tertiles (num_frames cuts 64 / 101):
+  short n= 3062 med=   53 base=44.89  shuffle_s0: -0.48 [-1.34,+0.36]  reverse: -0.31 [-1.23,+0.65]  hold4: -0.29 [-1.05,+0.45]  hold1: -4.30 [-5.69,-2.95]
+  mid   n= 3078 med=   80 base=42.75  shuffle_s0: +0.16 [-0.33,+0.66]  reverse: -0.52 [-1.16,+0.13]  hold4: -0.33 [-0.98,+0.37]  hold1: -4.41 [-5.44,-3.33]
+  long  n= 3032 med=  144 base=41.26  shuffle_s0: -0.91 [-1.45,-0.41]  reverse: -0.80 [-1.52,-0.14]  hold4: -2.30 [-3.13,-1.59]  hold1: -5.08 [-6.38,-3.81]
+  long-short  shuffle_s0: -0.44 [-1.41,+0.50]   reverse: -0.49 [-1.67,+0.64]   hold4: -2.01 [-3.07,-0.99]!  hold1: -0.78 [-2.65,+1.05]    (! = length effect)
+
+=== mma_cremad (CREMAD, 7438 clips)
+per class: n, base recall, d_recall [90% CI] per arm (* = time-sensitive)
+  happiness        1271  93.5  shuffle_s0:  -3.2 [ -4.1, -2.4]*  reverse: -17.5 [-19.2,-15.7]*  hold4:  -0.6 [ -1.1, -0.2]   hold1:  -3.5 [ -4.6, -2.4]*
+  sadness          1269  67.1  shuffle_s0:  +0.2 [ -0.7, +1.0]   reverse:  -1.3 [ -2.3, -0.3]   hold4:  -0.5 [ -1.3, +0.3]   hold1:  -5.3 [ -7.0, -3.6]*
+  neutral          1086  81.7  shuffle_s0:  -0.1 [ -1.0, +0.8]   reverse:  -1.7 [ -2.9, -0.6]   hold4:  +0.3 [ -0.6, +1.2]   hold1:  -2.9 [ -4.5, -1.4] 
+  anger            1271  87.4  shuffle_s0:  -1.4 [ -2.1, -0.7]   reverse:  -0.6 [ -1.4, +0.2]   hold4:  -0.3 [ -1.0, +0.4]   hold1:  -7.3 [ -8.7, -5.9]*
+  disgust          1270  75.4  shuffle_s0:  +0.0 [ -0.8, +0.7]   reverse:  -3.4 [ -4.4, -2.3]*  hold4:  -0.8 [ -1.5, -0.1]   hold1:  +0.9 [ -0.5, +2.4] 
+  fear             1271  72.5  shuffle_s0:  -0.9 [ -1.7, +0.0]   reverse:  -0.9 [ -1.9, +0.1]   hold4:  -0.2 [ -1.0, +0.7]   hold1:  -5.0 [ -6.6, -3.5]*
+length tertiles (num_frames cuts 69 / 81):
+  short n= 2588 med=   62 base=79.31  shuffle_s0: -0.90 [-1.48,-0.26]  reverse: -3.98 [-4.80,-3.16]  hold4: -0.13 [-0.66,+0.41]  hold1: -3.89 [-4.96,-2.82]
+  mid   n= 2438 med=   75 base=78.78  shuffle_s0: -1.34 [-1.93,-0.80]  reverse: -4.87 [-5.72,-4.08]  hold4: -0.91 [-1.47,-0.37]  hold1: -3.55 [-4.55,-2.60]
+  long  n= 2412 med=   90 base=79.76  shuffle_s0: -0.75 [-1.44,-0.06]  reverse: -4.75 [-5.75,-3.73]  hold4: -0.20 [-0.77,+0.37]  hold1: -4.28 [-5.42,-3.17]
+  long-short  shuffle_s0: +0.16 [-0.76,+1.08]   reverse: -0.77 [-2.03,+0.57]   hold4: -0.07 [-0.85,+0.74]   hold1: -0.39 [-1.90,+1.10]    (! = length effect)
+
+=== ot_dfew (DFEW, 11697 clips)
+per class: n, base recall, d_recall [90% CI] per arm (* = time-sensitive)
+  happiness        2445  95.0  shuffle_s0:  -0.9 [ -1.4, -0.4]   reverse:  -1.4 [ -2.0, -0.8]   hold4:  -1.2 [ -1.8, -0.7]   hold1: -13.1 [-14.3,-12.0]*
+  sadness          1894  79.8  shuffle_s0:  -0.2 [ -0.6, +0.3]   reverse:  -0.2 [ -0.7, +0.3]   hold4:  +0.2 [ -0.5, +0.8]   hold1:  -0.1 [ -1.1, +0.9] 
+  neutral          2669  74.6  shuffle_s0:  +0.7 [ +0.2, +1.2]   reverse:  +0.4 [ -0.2, +1.1]   hold4:  +0.6 [ -0.1, +1.2]   hold1:  +0.1 [ -1.0, +1.2] 
+  anger            2173  76.9  shuffle_s0:  +0.4 [ -0.1, +0.9]   reverse:  +0.1 [ -0.4, +0.7]   hold4:  -3.2 [ -4.1, -2.3]*  hold1: -16.0 [-17.4,-14.5]*
+  surprise         1469  63.3  shuffle_s0:  -3.1 [ -4.1, -2.1]*  reverse:  -3.3 [ -4.5, -2.1]*  hold4:  +0.3 [ -0.6, +1.3]   hold1:  -3.4 [ -4.9, -1.9]*
+  disgust           145  13.1  shuffle_s0:  -2.1 [ -4.8, +0.0]   reverse:  -1.4 [ -4.2, +1.3]   hold4:  +0.7 [ -1.9, +3.2]   hold1:  +0.7 [ -3.4, +4.6] 
+  fear              902  58.0  shuffle_s0:  +0.0 [ -0.9, +0.9]   reverse:  +0.1 [ -1.0, +1.2]   hold4:  -1.1 [ -2.3, +0.1]   hold1:  -2.5 [ -4.4, -0.7] 
+length tertiles (num_frames cuts 49 / 78):
+  short n= 3970 med=   47 base=66.79  shuffle_s0: -0.89 [-1.62,-0.24]  reverse: -0.70 [-1.58,+0.18]  hold4: -0.25 [-0.87,+0.43]  hold1: -4.19 [-5.33,-3.06]
+  mid   n= 3847 med=   71 base=64.44  shuffle_s0: -0.64 [-1.39,-0.06]  reverse: -0.75 [-1.54,-0.07]  hold4: -0.77 [-1.87,+0.20]  hold1: -4.62 [-5.98,-3.29]
+  long  n= 3880 med=  106 base=64.18  shuffle_s0: -0.25 [-1.08,+0.74]  reverse: -0.95 [-1.54,-0.34]  hold4: -0.89 [-1.54,-0.28]  hold1: -6.12 [-7.94,-4.40]
+  long-short  shuffle_s0: +0.64 [-0.38,+1.85]   reverse: -0.25 [-1.30,+0.79]   hold4: -0.65 [-1.57,+0.25]   hold1: -1.93 [-4.05,+0.15]    (! = length effect)
+
+=== ot_mafw (MAFW, 9172 clips)
+per class: n, base recall, d_recall [90% CI] per arm (* = time-sensitive)
+  happiness        1242  80.5  shuffle_s0:  -1.9 [ -2.8, -1.1]   reverse:  -1.6 [ -2.7, -0.5]   hold4:  -3.3 [ -4.6, -2.2]*  hold1: -16.6 [-18.5,-14.7]*
+  sadness          1470  75.3  shuffle_s0:  +0.5 [ +0.0, +1.0]   reverse:  +0.2 [ -0.4, +0.9]   hold4:  +0.4 [ -0.4, +1.2]   hold1:  -0.7 [ -2.0, +0.7] 
+  neutral          1138  65.0  shuffle_s0:  +0.3 [ -0.5, +1.0]   reverse:  -0.6 [ -1.6, +0.4]   hold4:  +0.5 [ -0.6, +1.6]   hold1:  +2.1 [ +0.4, +3.8] 
+  anger            1390  65.1  shuffle_s0:  +0.1 [ -0.5, +0.6]   reverse:  -0.5 [ -1.1, +0.1]   hold4:  -0.9 [ -1.9, +0.0]   hold1:  -8.0 [ -9.6, -6.4]*
+  surprise         1072  56.8  shuffle_s0:  +0.4 [ -0.4, +1.1]   reverse:  -0.1 [ -1.1, +0.9]   hold4:  -1.1 [ -2.2, +0.0]   hold1:  -6.2 [ -8.1, -4.2]*
+  disgust           639  28.8  shuffle_s0:  -1.6 [ -2.8, -0.3]   reverse:  -2.2 [ -3.7, -0.6]   hold4:  -3.6 [ -5.4, -1.7]*  hold1:  -6.7 [ -9.3, -4.1]*
+  fear              625  50.6  shuffle_s0:  +0.0 [ -0.5, +0.5]   reverse:  +0.5 [ -0.3, +1.3]   hold4:  -1.3 [ -2.4, -0.2]   hold1:  -3.4 [ -5.4, -1.4]*
+  contempt          236   9.7  shuffle_s0:  -2.1 [ -3.9, -0.4]   reverse:  -3.0 [ -4.9, -1.3]   hold4:  -2.1 [ -4.1, +0.0]   hold1:  -4.2 [ -7.1, -1.3]*
+  anxiety           916  31.1  shuffle_s0:  +0.5 [ -0.2, +1.4]   reverse:  +0.4 [ -0.4, +1.3]   hold4:  -1.5 [ -2.7, -0.3]   hold1:  -6.8 [ -8.9, -4.6]*
+  helplessness      262   6.1  shuffle_s0:  +1.5 [ -0.4, +3.5]   reverse:  +0.0 [ -2.3, +2.4]   hold4:  +1.5 [ -0.4, +3.5]   hold1:  +0.0 [ -2.4, +2.5] 
+  disappointment    182  10.4  shuffle_s0:  -0.5 [ -3.1, +1.7]   reverse:  -2.7 [ -5.6, +0.0]   hold4:  +0.0 [ -2.3, +2.3]   hold1:  -1.6 [ -5.1, +1.6] 
+length tertiles (num_frames cuts 64 / 101):
+  short n= 3062 med=   53 base=45.07  shuffle_s0: -0.15 [-1.08,+0.75]  reverse: -0.84 [-1.78,+0.14]  hold4: -0.28 [-1.11,+0.55]  hold1: -3.99 [-5.36,-2.64]
+  mid   n= 3078 med=   80 base=42.92  shuffle_s0: +0.11 [-0.46,+0.70]  reverse: -0.33 [-1.00,+0.39]  hold4: -1.00 [-1.74,-0.26]  hold1: -4.58 [-5.70,-3.45]
+  long  n= 3032 med=  144 base=40.92  shuffle_s0: -0.46 [-0.96,+0.06]  reverse: -1.06 [-1.79,-0.32]  hold4: -1.77 [-2.62,-0.91]  hold1: -5.15 [-6.38,-3.97]
+  long-short  shuffle_s0: -0.31 [-1.35,+0.73]   reverse: -0.21 [-1.43,+0.99]   hold4: -1.48 [-2.66,-0.31]!  hold1: -1.16 [-3.07,+0.70]    (! = length effect)
+
+=== ot_cremad (CREMAD, 7438 clips)
+per class: n, base recall, d_recall [90% CI] per arm (* = time-sensitive)
+  happiness        1271  93.5  shuffle_s0:  -2.9 [ -3.8, -2.1]   reverse: -14.8 [-16.4,-13.1]*  hold4:  -0.2 [ -0.7, +0.4]   hold1:  -3.1 [ -4.2, -2.1]*
+  sadness          1269  68.1  shuffle_s0:  -0.6 [ -1.5, +0.2]   reverse:  -1.6 [ -2.7, -0.5]   hold4:  -1.1 [ -2.0, -0.2]   hold1:  -5.0 [ -6.7, -3.3]*
+  neutral          1086  81.0  shuffle_s0:  +0.1 [ -0.8, +1.1]   reverse:  -0.7 [ -1.8, +0.3]   hold4:  +0.5 [ -0.4, +1.3]   hold1:  -1.8 [ -3.3, -0.4] 
+  anger            1271  86.4  shuffle_s0:  -1.8 [ -2.6, -1.0]   reverse:  -1.3 [ -2.3, -0.5]   hold4:  -0.4 [ -1.2, +0.4]   hold1:  -9.0 [-10.5, -7.5]*
+  disgust          1270  75.4  shuffle_s0:  -0.5 [ -1.2, +0.2]   reverse:  -3.5 [ -4.6, -2.4]*  hold4:  -1.1 [ -1.9, -0.3]   hold1:  +0.8 [ -0.6, +2.2] 
+  fear             1271  72.9  shuffle_s0:  +0.2 [ -0.5, +0.8]   reverse:  -0.6 [ -1.5, +0.2]   hold4:  +0.5 [ -0.3, +1.3]   hold1:  -5.0 [ -6.6, -3.6]*
+length tertiles (num_frames cuts 69 / 81):
+  short n= 2588 med=   62 base=79.14  shuffle_s0: -0.77 [-1.33,-0.23]  reverse: -3.45 [-4.27,-2.66]  hold4: +0.03 [-0.53,+0.58]  hold1: -3.23 [-4.22,-2.26]
+  mid   n= 2438 med=   75 base=78.58  shuffle_s0: -0.95 [-1.55,-0.40]  reverse: -4.43 [-5.27,-3.66]  hold4: -0.79 [-1.37,-0.20]  hold1: -3.95 [-4.94,-2.98]
+  long  n= 2412 med=   90 base=79.93  shuffle_s0: -1.21 [-1.89,-0.53]  reverse: -4.36 [-5.31,-3.40]  hold4: -0.17 [-0.76,+0.43]  hold1: -4.27 [-5.41,-3.16]
+  long-short  shuffle_s0: -0.44 [-1.31,+0.47]   reverse: -0.91 [-2.14,+0.34]   hold4: -0.20 [-0.99,+0.65]   hold1: -1.04 [-2.48,+0.42]    (! = length effect)

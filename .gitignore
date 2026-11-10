@@ -1,0 +1,35 @@
+# Per-clip predictions (about 300 MB). They stay on the server; the summaries are committed.
+*.npz
+
+# Packaged copies of reports and drafts (rebuilt from the sources)
+*.zip
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Heavy, server-side directories. They are never synced to this folder;
+# listed so that a copy from the server cannot add them by accident.
+/data/
+/cache/
+/runs/
+/runs_p2t/
+/tools/
+/openface/OpenFace/
+/openface/dlib-src/
+/p1/ckpt*/
+/p1/HiCMAE/
+/p1/.venv/
+*.pth
+*.pt
+*.ckpt
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+*.xdv
