@@ -1,0 +1,15 @@
+/home/debian135/AVDFEROT/AV-DFER-OT/runs/DFEW/dev/scr-a7b5c56e7d3f
+11697 test clips, base UAR 66.58
+
+arm            UAR    dUAR [90% CI]          changed % [90% CI]     class
+base          66.58   +0.00 [ +0.00,  +0.00]    0.00 [ 0.00,  0.00]   -
+indep_all     66.29   -0.28 [ -0.55,  -0.06]    0.84 [ 0.70,  0.97]   inert
+
+per-fold dUAR
+  indep_all     -0.24   -0.37   -0.14   +0.17   -0.85
+
+trace (relative change against base, mean over clips and folds): in_mean, in_frame, out, logit
+  indep_all    in_mean 4.717e-03  in_frame 1.132e-01  out 8.920e-03  logit 1.498e-02
+tanh(all_gate) per block, fold mean: -0.014 -0.019 -0.036 -0.011 -0.007 +0.046 -0.012 -0.011 +0.058 -0.049 +0.023 -0.002
+tanh(g_a2v) per block, fold mean:    -0.013 -0.001 +0.001 +0.004 -0.014 +0.038 -0.009 +0.012 +0.035 +0.016 +0.030 +0.014
+-> /mnt/debian135/datadeb135/dfer-visual/results/e345/eps/trained_eps0.02/summary.json

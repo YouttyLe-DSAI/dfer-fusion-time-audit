@@ -1,0 +1,19 @@
+/home/debian135/AVDFEROT/abv_dev/runs/abvnet/DFEW/dev/scr-6e74d4117aa0
+11697 test clips, base UAR 66.46
+
+arm            UAR    dUAR [90% CI]          changed % [90% CI]     class
+base          66.46   +0.00 [ +0.00,  +0.00]    0.00 [ 0.00,  0.00]   -
+indep_all     66.53   +0.07 [ -0.30,  +0.44]    2.84 [ 2.59,  3.11]   weak
+indep_1_9     66.51   +0.05 [ -0.03,  +0.14]    0.32 [ 0.24,  0.40]   inert
+indep_10_12   66.50   +0.04 [ -0.33,  +0.41]    2.75 [ 2.50,  3.01]   weak
+
+per-fold dUAR
+  indep_all     -0.50   +0.96   +0.09   +0.25   -0.44
+  indep_1_9     -0.13   +0.07   +0.19   +0.12   +0.00
+  indep_10_12   -0.42   +1.03   +0.03   -0.01   -0.41
+
+trace (relative change against base, mean over clips and folds): logit
+  indep_all    logit 5.005e-02
+  indep_1_9    logit 7.382e-03
+  indep_10_12  logit 4.936e-02
+-> /mnt/debian135/datadeb135/dfer-visual/results/blocksub/DFEW_abv/summary.json

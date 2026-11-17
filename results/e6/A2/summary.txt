@@ -1,0 +1,21 @@
+/mnt/debian135/datadeb135/dfer-visual/runs_e6/DFEW/dev/scr-03cec607f139
+11697 test clips, base UAR 66.78
+
+arm            UAR    dUAR [90% CI]          changed % [90% CI]     class
+base          66.78   +0.00 [ +0.00,  +0.00]    0.00 [ 0.00,  0.00]   -
+indep_all     66.40   -0.37 [ -0.64,  -0.13]    1.16 [ 1.00,  1.33]   weak
+indep_1_9     66.77   -0.01 [ -0.06,  +0.04]    0.11 [ 0.07,  0.16]   inert
+indep_10_12   66.40   -0.38 [ -0.65,  -0.14]    1.15 [ 0.98,  1.32]   weak
+
+per-fold dUAR
+  indep_all     -0.75   -0.00   -0.77   -0.20   -0.15
+  indep_1_9     +0.03   -0.01   -0.08   -0.08   +0.11
+  indep_10_12   -0.72   -0.07   -0.83   -0.11   -0.16
+
+trace (relative change against base, mean over clips and folds): in_mean, in_frame, out, logit
+  indep_all    in_mean 4.440e-03  in_frame 9.993e-02  out 9.995e-03  logit 1.687e-02
+  indep_1_9    in_mean 2.359e-03  in_frame 4.023e-02  out 2.087e-03  logit 3.223e-03
+  indep_10_12  in_mean 3.792e-03  in_frame 9.089e-02  out 9.794e-03  logit 1.650e-02
+tanh(all_gate) per block, fold mean: -0.013 -0.021 -0.035 -0.010 -0.008 +0.045 -0.012 -0.012 +0.057 -0.050 +0.023 -0.003
+tanh(g_a2v) per block, fold mean:    -0.035 -0.001 +0.002 +0.005 -0.015 +0.038 -0.010 +0.013 +0.035 +0.019 +0.031 +0.015
+-> /mnt/debian135/datadeb135/dfer-visual/results/e6/A2/summary.json

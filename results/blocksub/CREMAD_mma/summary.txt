@@ -1,0 +1,23 @@
+/home/debian135/AVDFEROT/AV-DFER-OT/runs/CREMAD/dev/scr-f1dc1fc2dff2
+7438 test clips, base UAR 79.56
+
+arm            UAR    dUAR [90% CI]          changed % [90% CI]     class
+base          79.56   +0.00 [ +0.00,  +0.00]    0.00 [ 0.00,  0.00]   -
+indep_all     79.43   -0.13 [ -0.24,  -0.02]    0.46 [ 0.34,  0.59]   inert
+indep_1_9     79.46   -0.09 [ -0.16,  -0.04]    0.12 [ 0.05,  0.19]   inert
+indep_10_12   79.41   -0.14 [ -0.25,  -0.04]    0.42 [ 0.30,  0.54]   inert
+
+per-fold dUAR
+  indep_all     -0.25   -0.07   -0.13   -0.07   -0.14
+  indep_1_9     +0.00   -0.07   -0.28   -0.07   -0.06
+  indep_10_12   -0.27   -0.07   -0.13   +0.01   -0.26
+
+trace (relative change against base, mean over clips and folds): in_mean, in_frame, out, logit
+  indep_all    in_mean 5.581e-03  in_frame 1.207e-01  out 9.028e-03  logit 1.275e-02
+  indep_1_9    in_mean 2.369e-03  in_frame 3.195e-02  out 2.202e-03  logit 2.829e-03
+  indep_10_12  in_mean 5.100e-03  in_frame 1.171e-01  out 8.909e-03  logit 1.259e-02
+tanh(all_gate) per block, fold mean: +0.000 -0.006 -0.001 -0.009 +0.020 +0.002 +0.009 -0.010 +0.011 -0.017 -0.013 +0.011
+tanh(g_a2v) per block, fold mean:    +0.002 -0.014 +0.001 +0.001 +0.015 +0.024 -0.012 +0.014 +0.031 -0.015 -0.034 -0.034
+
+sanity: base / indep_all vs P2-OT per fold [(0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0)] -> PASS
+-> /mnt/debian135/datadeb135/dfer-visual/results/blocksub/CREMAD_mma/summary.json
